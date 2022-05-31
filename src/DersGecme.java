@@ -22,6 +22,16 @@ public class DersGecme {
 
         System.out.print("Müzik notunu girin: ");
         muzik = input.nextInt();
+        if (mat < 0 || mat > 100)
+            mat = 0;
+        if (fizik < 0 || fizik > 100)
+            fizik = 0;
+        if (kimya < 0 || kimya > 100)
+            kimya = 0;
+        if (tarih < 0 || tarih > 100)
+            tarih = 0;
+        if (muzik < 0 || muzik > 100)
+            muzik = 0;
 
         int toplam = mat + fizik + kimya + tarih + muzik;
 
